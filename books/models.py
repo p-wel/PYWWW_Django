@@ -7,3 +7,6 @@ class Book(models.Model):
     available = models.BooleanField(default=False)
     publication_year = models.DateField()
     author = models.CharField(max_length=255)
+
+    def __str__(self):
+        return f"{self.id} {self.title}"
