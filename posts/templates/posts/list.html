@@ -8,7 +8,7 @@
 <h1>Lista postów</h1>
 <ul>
     {% for post in posts_list %}
-        <li>{{ post }}</li>
+        <li><a href="/posts/{{ post.id }}">{{ post }}</a></li>
     {% endfor %}
 </ul>
 </body>
