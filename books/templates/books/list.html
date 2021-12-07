@@ -8,28 +8,13 @@
 <h1>Lista książek</h1>
 <ul>
     {% for book in books_list %}
-        <li>{{ book }}</li>
+        <li>{{ book }}
+            {% if book.available %}
+                (Na półce)
+            {% elif book.available == False %}
+                (Wypożyczona)
+            {% endif %}
+        </li>
+
     {% endfor %}
 </ul>
-<div>{{ liczba }}</div>
-<div>{{ slownik }}</div>
-<div>
-    <h1>Mam na imię {{  first_name }}</h1>
-    <div>
-        Wiek: {{ age }}
-    </div>
-    <h2>Dzieci</h2>
-    <ul>
-        {%  for child in children %}
-        <li>{{ child }}</li>
-        {% endfor %}
-    </ul>
-    <h2>Programuje w: </h2>
-    <ol>
-        {% for language in programming_languages.items %}
-            <li>{{ language }} {{ level }}</li>
-        {% endfor %}
-    </ol>
-</div>
-</body>
-</html>
