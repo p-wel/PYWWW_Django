@@ -1,0 +1,90 @@
+[
+{
+  "model": "posts.post",
+  "pk": 1,
+  "fields": {
+    "title": "Pierwszy post",
+    "content": "To jest zawartoœæ pierwszego posta",
+    "published": false,
+    "created": "2021-12-05T13:30:07.395Z",
+    "modified": "2021-12-05T13:30:21.187Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 2,
+  "fields": {
+    "title": "Drugi post",
+    "content": "Tworzê nieopublikowany post",
+    "published": false,
+    "created": "2021-12-05T13:30:46.724Z",
+    "modified": "2021-12-05T13:30:46.724Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 3,
+  "fields": {
+    "title": "test",
+    "content": "test",
+    "published": false,
+    "created": "2021-12-06T13:08:51.383Z",
+    "modified": "2021-12-06T13:08:51.383Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 4,
+  "fields": {
+    "title": "test",
+    "content": "test",
+    "published": false,
+    "created": "2021-12-06T13:09:01.665Z",
+    "modified": "2021-12-06T13:09:01.665Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 5,
+  "fields": {
+    "title": "Ala",
+    "content": "",
+    "published": false,
+    "created": "2021-12-06T13:18:21.880Z",
+    "modified": "2021-12-06T13:18:21.880Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 7,
+  "fields": {
+    "title": "Bolek",
+    "content": "",
+    "published": false,
+    "created": "2021-12-06T13:42:16.216Z",
+    "modified": "2021-12-06T13:42:16.216Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 8,
+  "fields": {
+    "title": "Bolek",
+    "content": "",
+    "published": false,
+    "created": "2021-12-06T14:46:56.325Z",
+    "modified": "2021-12-06T14:46:56.325Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 9,
+  "fields": {
+    "title": "Hello!",
+    "content": "note",
+    "published": true,
+    "created": "2021-12-06T14:50:25.361Z",
+    "modified": "2021-12-06T14:50:25.361Z"
+  }
+}
+]
