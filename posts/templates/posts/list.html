@@ -1,17 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Posty</title>
-</head>
-<body>
+{%  extends 'base.html' %}
+{% block content %}
+
 <h1>Lista postów</h1>
 <ul>
     {% for post in posts_list %}
-        <li><a href="/posts/{{ post.id }}">{{ post }}</a></li>
+        <li>
+            <a href="{% url 'posts:details' post.id %}">
+                {{ post.title }} </a>
+            {% if post.sponsored %}
+                (sponsorowany)
+            {% endif %}
+        </li>
     {% endfor %}
 </ul>
-</body>
-</html>
 
-
+{% endblock %}

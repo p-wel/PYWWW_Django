@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Post info</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
+
 <h1>Szczegóły posta</h1>
+    <a href="/">Strona główna</a>
 <ul>
-    <a href="/posts/{{ post.id }}">{{ post }}</a> - widok szczegółowy
+    <a href="/posts/{{ post.id }}">{{ post }}</a> - tutaj widzisz widok szczegółowy tej książki
 </ul>
 <div>
     <a href="https://www.mistrzowie.org" target="_blank">Visit Mistrzowie.org!</a>
@@ -15,10 +12,5 @@
 <div>
     <a href="/posts/">Wstecz</a>
 </div>
-<div>
-    <a href="/">Strona główna</a>
-</div>
-</body>
-</html>
 
-
+{% endblock %}
