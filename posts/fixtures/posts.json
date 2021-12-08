@@ -3,88 +3,104 @@
   "model": "posts.post",
   "pk": 1,
   "fields": {
+    "created": "2021-12-05T13:30:07.395Z",
+    "modified": "2021-12-05T13:30:21.187Z",
     "title": "Pierwszy post",
     "content": "To jest zawartoœæ pierwszego posta",
     "published": false,
-    "created": "2021-12-05T13:30:07.395Z",
-    "modified": "2021-12-05T13:30:21.187Z"
+    "sponsored": false,
+    "user": 1
   }
 },
 {
   "model": "posts.post",
   "pk": 2,
   "fields": {
+    "created": "2021-12-05T13:30:46.724Z",
+    "modified": "2021-12-05T13:30:46.724Z",
     "title": "Drugi post",
     "content": "Tworzê nieopublikowany post",
     "published": false,
-    "created": "2021-12-05T13:30:46.724Z",
-    "modified": "2021-12-05T13:30:46.724Z"
+    "sponsored": false,
+    "user": 1
   }
 },
 {
   "model": "posts.post",
   "pk": 3,
   "fields": {
+    "created": "2021-12-06T13:08:51.383Z",
+    "modified": "2021-12-06T13:08:51.383Z",
     "title": "test",
     "content": "test",
     "published": false,
-    "created": "2021-12-06T13:08:51.383Z",
-    "modified": "2021-12-06T13:08:51.383Z"
+    "sponsored": false,
+    "user": 1
   }
 },
 {
   "model": "posts.post",
   "pk": 4,
   "fields": {
+    "created": "2021-12-06T13:09:01.665Z",
+    "modified": "2021-12-06T13:09:01.665Z",
     "title": "test",
     "content": "test",
     "published": false,
-    "created": "2021-12-06T13:09:01.665Z",
-    "modified": "2021-12-06T13:09:01.665Z"
+    "sponsored": false,
+    "user": 1
   }
 },
 {
   "model": "posts.post",
   "pk": 5,
   "fields": {
+    "created": "2021-12-06T13:18:21.880Z",
+    "modified": "2021-12-06T13:18:21.880Z",
     "title": "Ala",
     "content": "",
     "published": false,
-    "created": "2021-12-06T13:18:21.880Z",
-    "modified": "2021-12-06T13:18:21.880Z"
+    "sponsored": false,
+    "user": 1
   }
 },
 {
   "model": "posts.post",
   "pk": 7,
   "fields": {
+    "created": "2021-12-06T13:42:16.216Z",
+    "modified": "2021-12-06T13:42:16.216Z",
     "title": "Bolek",
     "content": "",
     "published": false,
-    "created": "2021-12-06T13:42:16.216Z",
-    "modified": "2021-12-06T13:42:16.216Z"
+    "sponsored": false,
+    "user": 1
   }
 },
 {
   "model": "posts.post",
   "pk": 8,
   "fields": {
+    "created": "2021-12-06T14:46:56.325Z",
+    "modified": "2021-12-06T14:46:56.325Z",
     "title": "Bolek",
     "content": "",
     "published": false,
-    "created": "2021-12-06T14:46:56.325Z",
-    "modified": "2021-12-06T14:46:56.325Z"
+    "sponsored": false,
+    "user": 1
   }
 },
 {
   "model": "posts.post",
   "pk": 9,
   "fields": {
+    "created": "2021-12-06T14:50:25.361Z",
+    "modified": "2021-12-06T14:50:25.361Z",
     "title": "Hello!",
     "content": "note",
     "published": true,
-    "created": "2021-12-06T14:50:25.361Z",
-    "modified": "2021-12-06T14:50:25.361Z"
+    "sponsored": false,
+    "user": 1
   }
 }
 ]

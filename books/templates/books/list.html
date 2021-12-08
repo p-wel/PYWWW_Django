@@ -1,20 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Biblioteka</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block content %}
 <h1>Lista książek</h1>
 <ul>
     {% for book in books_list %}
-        <li>{{ book }}
+        <li>
+            <a href="{% url 'books:details' book.id %}">
+                {{ book.title }}
+            </a>
             {% if book.available %}
                 (Na półce)
             {% elif book.available == False %}
                 (Wypożyczona)
             {% endif %}
         </li>
-
     {% endfor %}
 </ul>
+{% endblock %}

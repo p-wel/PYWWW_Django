@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
 def hello_world(request):
-    context = {'hello_text': 'Hello World!'}
-    return render(request, "main/about.html", context=context)
+    return render(request, "main/hello_world.html")
+
+def about(request):
+    return render(request, 'main/about.html')
