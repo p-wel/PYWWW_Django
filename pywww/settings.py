@@ -132,3 +132,6 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 SHELL_PLUS_PRINT_SQL = True
+
+MEDIA_ROOT = BASE_DIR / "media"
+MEDIA_URL = "/media/"
