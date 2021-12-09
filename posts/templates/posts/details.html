@@ -1,16 +1,26 @@
-{% extends 'base.html' %}
-{% block content %}
-
 <h1>Szczegóły posta</h1>
-    <a href="/">Strona główna</a>
-<ul>
-    <a href="/posts/{{ post.id }}">{{ post }}</a> - tutaj widzisz widok szczegółowy tej książki
-</ul>
-<div>
-    <a href="https://www.mistrzowie.org" target="_blank">Visit Mistrzowie.org!</a>
-</div>
-<div>
-    <a href="/posts/">Wstecz</a>
-</div>
 
+{% extends 'base.html' %}
+
+{% block content %}
+    <a href="/">Strona główna</a>
+    <ul>
+        <a href="/posts/{{ post.id }}">{{ post }}</a> - tutaj widzisz widok szczegółowy tej książki
+    </ul>
+    <div>
+        {{ post.content }}
+    </div>
+    {% if post.example_file %}
+        <div>Pobierz <a href="{{ post.example_file.url }}">przykład</a></div>
+    {% endif %}
+    <div>
+        <img src="{{ post.image.url }}">
+    </div>
+
+    <div>
+        <a href="https://www.mistrzowie.org" target="_blank">Visit Mistrzowie.org!</a>
+    </div>
+    <div>
+        <a href="/posts/">Wstecz</a>
+    </div>
 {% endblock %}

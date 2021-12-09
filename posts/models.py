@@ -21,6 +21,9 @@ class Post(Timestamped):
     published = models.BooleanField(default=False)
     sponsored = models.BooleanField(default=False)
     user = models.ForeignKey("auth.User", on_delete=models.CASCADE)
+    example_file = models.FileField(upload_to='posts/esamples', blank=True, null=True)
+    image_width = models.IntegerField(blank=True, null=True, editable=False)
+    image = models.ImageField(upload_to="posts/images/%Y/%m/%d", null=True, width_field="image_width")
 
     def __str__(self):
         return f"{self.id} {self.title}"
