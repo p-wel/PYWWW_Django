@@ -1,19 +1,20 @@
 {% extends 'base.html' %}
-
+{% block title %}Lista książek{% endblock %}
 {% block content %}
-<h1>Lista książek</h1>
-<ul>
-    {% for book in books_list %}
-        <li>
-            <a href="{% url 'books:details' book.id %}">
-                {{ book.title }}
-            </a>
-            {% if book.available %}
-                (Na półce)
-            {% elif book.available == False %}
-                (Wypożyczona)
-            {% endif %}
-        </li>
-    {% endfor %}
-</ul>
+    <h1>Lista książek</h1>
+
+    <table class="table table-condensed">
+        <thead>
+        <td>Tytuł</td>
+        <td>Stan</td>
+        </thead>
+
+        {% for book in books_list %}
+            <tr>
+                <td><a href="{% url 'books:details' book.id %}">{{ book.title }}</a></td>
+                <td>{% if book.available == True %}Dostępna{% else %}Wypożyczona{% endif %}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
 {% endblock %}

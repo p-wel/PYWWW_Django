@@ -7,7 +7,11 @@ def books_list(request):
     context = {'books_list': books}
     return render(request, "books/list.html", context)
 
+
 def book_details(request, book_id):
     book = Book.objects.get(pk=book_id)
-    return render(request, "books/details.html", {"book": book})
-
+    return render(
+        request=request,
+        template_name="books/details.html",
+        context={"book": book}
+    )
