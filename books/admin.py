@@ -1,13 +1,8 @@
 from django.contrib import admin
 from import_export import resources
-from import_export.admin import ExportMixin
+from import_export.admin import ImportExportModelAdmin
 
-from .models import *
-
-
-class PostResource(resources.ModelResource):
-    class Meta:
-        model = Book
+from .models import Book, Author, Category
 
 
 @admin.register(Author)
@@ -16,15 +11,20 @@ class AuthorAdmin(admin.ModelAdmin):
     search_fields = ["name"]
 
 
+class BookResource(resources.ModelResource):
+    class Meta:
+        model = Book
+
+
 @admin.register(Book)
-class BookAdmin(ExportMixin, admin.ModelAdmin):
-    list_display = ["id", "title", "available", "publication_year"]
-    search_fields = ["title"]
-    # list_filter = ["available", "publication_year", "authors"]
-    resource_class = PostResource
+class BookAdmin(ImportExportModelAdmin):
+    list_display = ["id", "title"]
+    search_fields = ["title", "description", "author"]
+    list_filter = ["available"]
+    resource_class = BookResource
 
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ["id", "name", "category_description"]
+    list_display = ["id", "name"]
     search_fields = ["name"]

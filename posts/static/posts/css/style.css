@@ -1,0 +1,14 @@
+/*ul {*/
+/*    list-style-type: none;*/
+/*}*/
+
+/*ul li:nth-child(odd){*/
+/*    background-color: lightblue;*/
+/*}*/
+/*ul li:nth-child(odd) a{*/
+/*    color: #fff;*/
+/*}*/
+
+ul li a:hover{
+    color:red;
+}
