@@ -32,7 +32,7 @@ class Book(Timestamped):
     description = models.TextField()
     available = models.BooleanField(default=False)
     publication_year = models.DateField()
-    authors = models.ManyToManyField(Author, related_name="books")
+    author = models.ManyToManyField(Author, related_name="books")
 
     def __str__(self):
         return f"{self.id} {self.title}"

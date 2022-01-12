@@ -8,12 +8,14 @@ class CheckAgeMixin:
         delta = timedelta(days=n)
         return now() - self.created > delta
 
+
 class Timestamped(models.Model, CheckAgeMixin):
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
 
     class Meta:
         abstract = True
+
 
 class Post(Timestamped):
     title = models.CharField(max_length=255)
@@ -24,6 +26,7 @@ class Post(Timestamped):
     example_file = models.FileField(upload_to='posts/esamples', blank=True, null=True)
     image_width = models.IntegerField(blank=True, null=True, editable=False)
     image = models.ImageField(upload_to="posts/images/%Y/%m/%d", null=True, width_field="image_width")
+    tags = models.ManyToManyField('tags.Tag', related_name="posts")
 
     def __str__(self):
         return f"{self.id} {self.title}"
@@ -32,4 +35,4 @@ class Post(Timestamped):
 class Category(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField(blank=True)
-    posts = models.ManyToManyField("posts.Post")
+    posts = models.ManyToManyField('posts.Post', related_name="categories")
