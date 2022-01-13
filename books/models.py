@@ -33,6 +33,7 @@ class Book(Timestamped):
     available = models.BooleanField(default=False)
     publication_year = models.DateField()
     author = models.ManyToManyField(Author, related_name="books")
+    cover = models.ImageField(upload_to="books/covers/%Y/%m/%d", blank=True, null=True)
 
     def __str__(self):
         return f"{self.id} {self.title}"
@@ -44,7 +45,8 @@ class Category(models.Model):
     books = models.ManyToManyField("books.Book")
 
 
-
-
-
-
+class Borrow(models.Model):
+    book = models.ForeignKey("Book", on_delete=models.CASCADE, related_name="borrows")
+    user = models.ForeignKey("auth.User", on_delete=models.CASCADE, related_name="borrower")
+    borrow_date = models.DateTimeField(auto_now_add=True)
+    return_date = models.DateTimeField(null=True, blank=True)

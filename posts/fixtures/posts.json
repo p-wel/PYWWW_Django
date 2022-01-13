@@ -12,7 +12,8 @@
     "user": 1,
     "example_file": "",
     "image_width": 332,
-    "image": "posts/images/2021/12/09/grapefruit_LU3MZvh.jpg"
+    "image": "posts/images/2021/12/09/grapefruit_LU3MZvh.jpg",
+    "tags": []
   }
 },
 {
@@ -28,7 +29,8 @@
     "user": 1,
     "example_file": "",
     "image_width": 332,
-    "image": "posts/images/2021/12/09/grapefruit_yN1FFau.jpg"
+    "image": "posts/images/2021/12/09/grapefruit_yN1FFau.jpg",
+    "tags": []
   }
 },
 {
@@ -44,7 +46,8 @@
     "user": 1,
     "example_file": "",
     "image_width": 332,
-    "image": "posts/images/2021/12/09/grapefruit_j3qBAaA.jpg"
+    "image": "posts/images/2021/12/09/grapefruit_j3qBAaA.jpg",
+    "tags": []
   }
 },
 {
@@ -60,7 +63,8 @@
     "user": 1,
     "example_file": "",
     "image_width": 332,
-    "image": "posts/images/2021/12/09/grapefruit_pLnFjEs.jpg"
+    "image": "posts/images/2021/12/09/grapefruit_pLnFjEs.jpg",
+    "tags": []
   }
 },
 {
@@ -76,7 +80,8 @@
     "user": 1,
     "example_file": "",
     "image_width": 332,
-    "image": "posts/images/2021/12/09/grapefruit_6SQUD9k.jpg"
+    "image": "posts/images/2021/12/09/grapefruit_6SQUD9k.jpg",
+    "tags": []
   }
 },
 {
@@ -92,7 +97,8 @@
     "user": 1,
     "example_file": "",
     "image_width": 332,
-    "image": "posts/images/2021/12/09/grapefruit_KOEqeEs.jpg"
+    "image": "posts/images/2021/12/09/grapefruit_KOEqeEs.jpg",
+    "tags": []
   }
 },
 {
@@ -108,7 +114,8 @@
     "user": 1,
     "example_file": "",
     "image_width": 332,
-    "image": "posts/images/2021/12/09/grapefruit_DvZVohZ.jpg"
+    "image": "posts/images/2021/12/09/grapefruit_DvZVohZ.jpg",
+    "tags": []
   }
 },
 {
@@ -124,7 +131,8 @@
     "user": 1,
     "example_file": "posts/esamples/CoffeeBreakPython_yMTeCgn.pdf",
     "image_width": 332,
-    "image": "posts/images/2021/12/09/grapefruit.jpg"
+    "image": "posts/images/2021/12/09/grapefruit.jpg",
+    "tags": []
   }
 }
 ]

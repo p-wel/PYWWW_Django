@@ -1,0 +1,35 @@
+[
+{
+  "model": "posts.category",
+  "pk": 1,
+  "fields": {
+    "name": "Motoryzacja",
+    "description": "",
+    "posts": [
+      1
+    ]
+  }
+},
+{
+  "model": "posts.category",
+  "pk": 2,
+  "fields": {
+    "name": "Hydepark",
+    "description": "",
+    "posts": [
+      7
+    ]
+  }
+},
+{
+  "model": "posts.category",
+  "pk": 3,
+  "fields": {
+    "name": "Architektura",
+    "description": "",
+    "posts": [
+      3
+    ]
+  }
+}
+]

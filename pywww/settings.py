@@ -40,12 +40,15 @@ INSTALLED_APPS = [
 
     'django_extensions',
     'import_export',
+    'crispy_forms',
 
     'posts.apps.PostsConfig',
     'books.apps.BooksConfig',
     'main.apps.MainConfig',
     'tags.apps.TagsConfig',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
