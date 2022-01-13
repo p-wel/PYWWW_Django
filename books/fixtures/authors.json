@@ -1,0 +1,14 @@
+[
+{
+  "model": "books.author",
+  "pk": 1,
+  "fields": {
+    "created": "2021-12-09T19:42:17.361Z",
+    "modified": "2021-12-09T19:42:17.361Z",
+    "name": "SomeAuthor",
+    "birth_year": 1990,
+    "death_year": null,
+    "biogram": "qwe"
+  }
+}
+]

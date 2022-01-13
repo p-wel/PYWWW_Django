@@ -1,4 +1,7 @@
+from crispy_forms.helper import FormHelper
+from crispy_forms.layout import Submit
 from django.contrib import admin
+from django.forms import forms
 from import_export import resources
 from import_export.admin import ImportExportModelAdmin
 
@@ -28,3 +31,11 @@ class BookAdmin(ImportExportModelAdmin):
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ["id", "name"]
     search_fields = ["name"]
+
+
+class BookBorrowForm(forms.Form):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.helper = FormHelper()
+        self.helper.form_method = 'post'
+        self.helper.add_input(Submit('borrow', 'Wypożycz'))

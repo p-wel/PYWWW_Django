@@ -1,0 +1,35 @@
+[
+{
+  "model": "books.category",
+  "pk": 1,
+  "fields": {
+    "name": "Fantasy",
+    "category_description": "",
+    "books": [
+      4
+    ]
+  }
+},
+{
+  "model": "books.category",
+  "pk": 2,
+  "fields": {
+    "name": "Adventure",
+    "category_description": "",
+    "books": [
+      1
+    ]
+  }
+},
+{
+  "model": "books.category",
+  "pk": 3,
+  "fields": {
+    "name": "History",
+    "category_description": "",
+    "books": [
+      2
+    ]
+  }
+}
+]

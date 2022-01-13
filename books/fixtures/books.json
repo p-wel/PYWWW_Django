@@ -4,12 +4,15 @@
   "pk": 1,
   "fields": {
     "created": "2021-12-08T19:23:20.439Z",
-    "modified": "2021-12-08T19:23:20.442Z",
+    "modified": "2022-01-13T20:49:04.944Z",
     "title": "How to summon snakes",
     "description": "About Python programming",
     "available": true,
     "publication_year": "2021-09-01",
-    "authors": []
+    "cover": "",
+    "author": [
+      1
+    ]
   }
 },
 {
@@ -17,12 +20,15 @@
   "pk": 2,
   "fields": {
     "created": "2021-12-08T19:23:20.439Z",
-    "modified": "2021-12-08T19:23:20.442Z",
+    "modified": "2022-01-13T20:48:47.415Z",
     "title": "SomeBook",
     "description": "Book about something. Correcter publication year: 2021-05-01",
-    "available": true,
+    "available": false,
     "publication_year": "2021-05-01",
-    "authors": []
+    "cover": "",
+    "author": [
+      1
+    ]
   }
 },
 {
@@ -30,12 +36,15 @@
   "pk": 4,
   "fields": {
     "created": "2021-12-08T19:23:20.439Z",
-    "modified": "2021-12-08T19:23:20.442Z",
+    "modified": "2022-01-13T20:49:03.078Z",
     "title": "Mistic Book",
     "description": "guess",
     "available": false,
     "publication_year": "2021-12-07",
-    "authors": []
+    "cover": "",
+    "author": [
+      1
+    ]
   }
 }
 ]

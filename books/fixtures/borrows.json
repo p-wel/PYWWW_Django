@@ -1,0 +1,22 @@
+[
+{
+  "model": "books.borrow",
+  "pk": 1,
+  "fields": {
+    "book": 2,
+    "user": 4,
+    "borrow_date": "2022-01-13T20:48:33.498Z",
+    "return_date": null
+  }
+},
+{
+  "model": "books.borrow",
+  "pk": 2,
+  "fields": {
+    "book": 2,
+    "user": 4,
+    "borrow_date": "2022-01-13T20:48:47.407Z",
+    "return_date": null
+  }
+}
+]
