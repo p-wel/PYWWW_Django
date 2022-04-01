@@ -3,3 +3,5 @@
 Django Training Course - building Django website with apps:
 - "Books"
 - "Posts"
+
+[work in progress]
