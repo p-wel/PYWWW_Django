@@ -23,7 +23,7 @@ class Post(Timestamped):
     published = models.BooleanField(verbose_name="Opublikowany", default=False)
     sponsored = models.BooleanField(verbose_name="Sponsorowany", default=False)
     user = models.ForeignKey("auth.User", on_delete=models.CASCADE)
-    example_file = models.FileField(upload_to='posts/esamples', blank=True, null=True)
+    example_file = models.FileField(upload_to='posts/examples', blank=True, null=True)
     image_width = models.IntegerField(blank=True, null=True, editable=False)
     image = models.ImageField(upload_to="posts/images/%Y/%m/%d", null=True, blank=True, width_field="image_width")
     tags = models.ManyToManyField('tags.Tag', related_name="posts")
